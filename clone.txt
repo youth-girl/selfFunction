@@ -1,0 +1,19 @@
+clone:
+定义：将多个对象合并为一个对象
+参数列表：[deep],target,src1,src2,src3....
+1、检测deep的值是不是为boolean：
+   yes，进行深clone
+   no：默认为不进行深clone
+        1.1、则第一个参数为target
+            1.1.1、typeof返回的6种类型，只有object和function可以clone
+                    "number," "string," "boolean," "object," "function," 和 "undefined"
+2、
+clone的实例：
+var a = {
+     "name":{
+         "age":12
+     }
+ }
+var b = {
+dsf:sdf
+}

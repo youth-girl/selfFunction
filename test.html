@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        #a {
+            width: 100px;
+            height: 20px;
+            border: 1px solid black;
+            margin: 2px;
+        }
+
+        div {
+            width: 20px;
+            height: 20px;
+            background: black;
+            margin-bottom: 3px;
+        }
+
+        div:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="a"></div>
+<script src="getElementClassName.js"></script>
+<script>
+    var a = {
+        name:"hell"
+    };
+    var key;
+    for(key in a){}
+    if(key === undefined || Object.prototype.hasOwnProperty.call(a,key)){
+        console.log(true);
+    }
+</script>
+</body>
+</html>
